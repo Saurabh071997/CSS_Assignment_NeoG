@@ -1,0 +1,52 @@
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 500px; */
+    /* align-items: center; */
+}
+
+.card{
+    /* width:100%; */
+    width:200px;
+    font-size: 1rem;
+    border: 1px solid black;
+    padding:1rem;
+    margin:0rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.card + .third{
+    /* align-self: flex-end; */
+}
+
+button{
+    padding:0.5rem;
+}
+
+/* for third div using flex-grow & shrink */
+.card p{
+    flex: 1 0 auto;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subscript{
+    position: relative;
+    bottom: 10px;
+}
+
+.notification{
+    font-size: 1.25rem;
+    border: 1px solid black;
+    padding:0.5rem;
+    position: fixed;
+    left:1rem;
+    bottom:1rem;
+}
+

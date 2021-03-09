@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+body{
+    margin:0px;
+    background-color: #1E293B;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas: "gridleft gridcenter gridright";
+    width:auto;
+    height:100vh;
+    padding:0px;
+    background-color: inherit;
+  
+}
+
+
+.grid-left{
+    grid-area: gridleft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #64748B ;
+    height:100%;
+}
+
+.nav-menu{
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    position: relative;
+    width:60%;
+    top:0.5em;
+    left:3em;
+}
+
+.icon{
+    width:20px;
+    height:20px;
+}
+
+.icon-main{
+    width:30px;
+    height:30px;
+    margin-bottom: 1.25rem;
+}
+
+.menu-tab{
+    display: flex;
+    margin:0.2rem 0rem;
+    border-radius: 2rem;
+    padding:0.5rem 1.5rem;
+    /* color:#0EA5E9; */
+}
+
+.menu-tab:hover{
+    background-color: #64748B;
+    /* color:#0EA5E9; */
+    
+}
+
+.menu-tab-heading{
+    font-size:1rem;
+    color:white;
+    font-weight: bold;
+    margin-left: 1rem;
+    position: relative;
+    bottom:0.2em;
+
+}
+
+.menu-tab-heading:hover{
+    color:#0EA5E9;
+}
+
+.menu-tab-btn{
+    display: flex;
+    margin:0.5rem 0rem;
+    border-radius: 2rem;
+    padding:0.2rem 1.5rem;
+    color:aliceblue;
+}
+
+.btn-tweet-long{
+    font-family: inherit;
+    background-color: #0EA5E9;
+    border-radius: 2rem;
+    padding:0.25rem 1.5rem;
+    text-align: center;
+    flex-grow: 1; 
+    align-self: flex-end; 
+}
+
+.profile{
+    display:flex;
+    padding:0.5rem 1.25rem;
+    width:50%;
+    border-radius: 2rem;
+    justify-content: space-between;
+    position: relative;
+    top:1em;
+    left:3em;
+    margin-top:5rem;
+}
+
+.profile:hover{
+    background-color: #64748B;
+}
+
+.profile-head{
+    display:flex;
+    justify-content: space-between;
+}
+
+.profile-img{
+    border-radius: 50%;
+    height:35px;
+    width:35px;
+    margin-right: 0.2rem;
+}
+
+.profile-detail{
+    display:flex;
+    flex-direction: column;
+}
+
+.profile-name{
+    font-size: 0.75rem;
+    color:white;
+}
+
+.profile-user{
+    font-size:0.6rem;
+    color:#CBD5E1;
+}
+
+
+/* Center Grid */
+
+.grid-center{
+    grid-area: gridcenter;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #64748B;
+    
+}
+
+.home{
+    display: flex;
+    width:auto;
+    padding:0.25rem 0.5rem;
+    justify-content: space-between;
+    border-bottom:1px solid #64748B;
+
+}
+
+.page-heading{
+    font-size: 1rem;
+    font-weight: bold;
+    color:white;
+    margin-left:1rem;
+}
+
+.page-symbol{
+    height:35px;
+    width: 30px;
+    margin:0rem 1rem;
+}
+
+.block-post{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #64748B;
+
+}
+
+.block-post-left{
+    margin-left: 1rem;
+}
+
+.block-post-right{
+    margin-left:0.5rem;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-right:1rem;
+}
+
+.post-content{
+    font-size: 1rem;
+    color:#64748B;
+    margin-bottom:2rem;
+}
+
+.post-footer{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.post-img{
+    margin-right:0.25rem;
+    height:20px;
+    width:25px;
+}
+
+.post-footer-btn{
+    color:white;
+    background-color:#0EA5E9;
+    font-size: 1rem;
+    padding:0.25rem 0.5rem;
+    border-radius:2rem;
+    position: relative;
+    bottom:0.45em;
+    opacity:0.6;
+}
+
+.page-space{
+    height:0.5rem;
+    background-color:#374151;
+}
+
+.post-container{
+    display:flex;
+}
+
+.post-container-header{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+.post-profile-name{
+    font-size:0.8rem;
+    color:white;
+    margin-right: 0.2rem;
+}
+
+.post-profile-user, .post-profile-time{
+    font-size:0.8rem;
+    color:#64748B;
+    margin-right: 0.2rem;
+}
+
+.post-container-content{
+    font-size: 0.8rem;
+    color:whitesmoke;
+    padding-top:0.5rem;
+    margin-right:1rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.hashtag{
+    color:#0EA5E9;
+}
+
+.post-container-img{
+    margin:1rem auto 0.5rem auto;
+    height:auto;
+    width:90%;
+    border-radius:1rem;
+    flex-grow: 1;
+}
+
+.post-container-footer{
+    display: flex;
+    justify-content: space-between;
+    width:85%;
+}
+
+.post-footer-num{
+    color:#64748B;
+    font-size:0.7rem;
+    position: relative;
+    bottom:0.5em;
+}
+
+.page-space-long{
+    height:5rem;
+}
+
+
+/* Right Grid */
+.grid-right{
+    grid-area: gridright;
+    display: flex;
+    flex-direction: column;
+    padding-left:1rem;
+}
+
+.search-bar{
+    background-color: #374151;
+    padding:0.5rem 0.75rem;
+    width:70%;
+    border-radius:2rem;
+    margin-bottom:1rem;
+}
+
+.search-img{
+    width:15px;
+    height:15px;
+}
+
+.search-text{
+    color:#64748B;
+    font-size: 0.8rem;
+    position: relative;
+    margin-left:0.5rem;
+    bottom:0.3em;
+}
+
+.block-happening{
+    display:flex;
+    flex-direction: column;
+    background-color: #374151;
+    padding:0.5rem 0.2rem;
+    width:75%;
+    margin-bottom:1rem;
+    border-radius:1rem;
+}
+
+.block-happening-head{
+    padding:0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight:bold;
+    color: white;
+    border-bottom:1px solid #64748B;
+}
+
+.block-happening-info{
+    padding:0.5rem 0.75rem;
+    border-bottom:1px solid #64748B;
+}
+
+.block-info-recent, .block-info-tweet{
+    font-size:0.6rem;
+    color:#D1D5DB;
+}
+
+.block-info-head{
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.see-more{
+    font-size:0.9rem;
+    color:#0EA5E9;
+    padding:0.5rem 0.75rem;
+}
+
+.block-to-follow{
+    display: flex;
+    flex-direction: column;
+    background-color: #374151;
+    padding:0.5rem 0.2rem;
+    width:75%;
+    margin-bottom:1rem;
+    border-radius:1rem;
+}
+
+.follow-head{
+    padding:0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight:bold;
+    color: white;
+    border-bottom:1px solid #64748B;
+}
+
+.follow-profile{
+    display:flex;
+    padding:0.5rem 0.75rem;
+    border-bottom:1px solid #64748B;
+}
+
+.follow-profile-detail{
+    display:flex;
+    flex-direction: column;
+    flex-grow:1;
+}
+
+.follow-profile-name{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color:white;
+}
+
+.follow-profile-user{
+    font-size: 0.6rem;
+    color:#CBD5E1;
+}
+
+.btn-follow{
+    font-size:0.8rem;
+    color:#0EA5E9;
+    padding:0.2rem 0.7rem;
+    border:1px solid #0EA5E9;
+    border-radius:1rem;
+    /* height:1rem; */
+    height: 20px;
+}
+
